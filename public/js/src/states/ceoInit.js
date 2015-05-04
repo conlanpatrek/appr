@@ -68,8 +68,8 @@ define(
                     }
                 }
                 var index = Math.floor(Math.random()*choices.length);
-                played.push(index);
                 nextGame  = choices[index];
+                played.push(nextGame);
                 ceoBegin  = game.state.states[nextGame].initVals();
                 gamedata.miniGamesPlayed(played);
             }
